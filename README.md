@@ -53,7 +53,8 @@ Need to installing Git Bash on Windows
    ```
 
 2. **Navigate to Program Directory**
-    ```cd <repository-directory>
+    ```bash
+    cd <repository-directory>
     ```
 
 3. **Make the Script Executable:**
