@@ -3,11 +3,11 @@
 
 # Additional: Keep a log file of all actions performed by users in a file called script.log in the same directory where you run the program.
  
- script_file="$(pwd)/script.log"
+script_file="$(pwd)/script.log"
 
- echo "$(date) --- PROGRAM STARTED..." >> "$script_file"
- 
- while true; do 
+echo "$(date) --- PROGRAM STARTED..." >> "$script_file"
+
+while true; do 
     echo "================================"
     echo "        File Management"
     echo "================================"
@@ -24,8 +24,8 @@
     case $choice in
         1) bash ./scripts/listing_details.sh;;
         2) bash ./scripts/backing_up.sh;; 
-        3) bash ./scripts/count_number_files.sh;;
-        4) bash ./scripts/display_disk.sh;;
+        3) bash ./scripts/count_number_of_file.sh;;
+        4) bash ./scripts/display_disk_usage.sh;;
         5) bash ./scripts/search_for_file.sh;;
         6) bash ./scripts/compress.sh;;
         7) exit 0;;
