@@ -19,6 +19,7 @@ while true; do
     echo "6. Compress file or directory"
     echo "7. Exit"
     echo "--------------------------------"
+    # Prompt user for choice
     read -p "Enter your choice: " choice
 
     case $choice in

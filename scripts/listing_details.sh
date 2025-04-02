@@ -4,8 +4,9 @@
 
 script_file="$(pwd)/script.log" # Log file
 
+# Prompt user for path
 read -p "Enter directory or file path: " path
-if [ -e "$path" ]; then
+if [ -e "$path" ]; then # Check either path exist
     ls -lh "$path"
     # Write message to log file
     echo "$(date) - Listed files ($path)" >> "$script_file"

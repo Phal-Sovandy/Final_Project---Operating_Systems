@@ -4,6 +4,7 @@
 
 script_file="$(pwd)/script.log" # Log file
 
+# Prompt user for path
 read -p "Enter directory path: " dir
 if [ -d "$dir" ]; then
     # Show disk usage of given directory with summary and in human-readable mode

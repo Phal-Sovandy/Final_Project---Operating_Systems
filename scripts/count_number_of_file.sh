@@ -4,6 +4,7 @@
 
 script_file="$(pwd)/script.log" # Log file
 
+# Prompt user for path
 read -p "Enter directory path: " dir
 if [ -d "$dir" ]; then
     # List all file within directory and sub-directory and count all the files
